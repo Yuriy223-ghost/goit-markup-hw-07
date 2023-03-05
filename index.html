@@ -12,8 +12,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
-"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -23,7 +22,9 @@
     <header class="header">
       <div class="header-container container">
         <nav class="header-nav">
-          <a class="logo link" href="./index.html"> Web<span class="logo-dark">Studio</span> </a>
+          <a class="header-logo logo link" href="./index.html">
+            Web<span class="logo-dark">Studio</span>
+          </a>
           <ul class="header-list list">
             <li class="header-item">
               <a class="header-link link active" href="./index.html"> Studio </a>
@@ -48,16 +49,21 @@
             </li>
           </ul>
         </address>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <!-- Hero image section -->
-      <section class="hero-section section">
+      <!-- <section class="hero-section section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn btn" type="button" data-modal-open>Order Service</button>
         </div>
-      </section>
+      </section> -->
       <!-- Sectoin1 -->
       <section class="benefits section">
         <div class="container">
@@ -122,28 +128,34 @@
             <li class="features-item">
               <img
                 class="features-img"
-                src="./images/section2/Rectangle74.jpg"
+                srcset="./images/features/img-1.jpg 1x, ./images/features/img-1@2x.jpg 2x"
+                src="./images/features/img-1.jpg"
                 alt="imac"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
             <li class="features-item">
               <img
                 class="features-img"
-                src="./images/section2/Rectangle75.jpg"
+                srcset="./images/features/img-2.jpg 1x, ./images/features/img-2@2x.jpg 2x"
+                src="./images/features/img-2.jpg"
                 alt="iponeslide"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
             <li class="features-item">
               <img
                 class="features-img"
-                src="./images/section2/Rectangle76.jpg"
+                srcset="./images/features/img-3.jpg 1x, ./images/features/img-3@2x.jpg 2x"
+                src="./images/features/img-3.jpg"
                 alt="phoneinhand"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
           </ul>
@@ -157,10 +169,12 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/section3/imgmark.jpg"
+                srcset="./images/team/img-1.jpg 1x, ./images/team/img-1@2x.jpg 2x"
+                src="./images/team/img-1.jpg"
                 alt="markguerrero"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-wrapper">
                 <h3 class="team-name">Mark Guerrero</h3>
@@ -206,10 +220,12 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/section3/imgtom.jpg"
+                srcset="./images/team/img-2.jpg 1x, ./images/team/img-2@2x.jpg 2x"
+                src="./images/team/img-2.jpg"
                 alt="tomford"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-wrapper">
                 <h3 class="team-name">Tom Ford</h3>
@@ -255,10 +271,12 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/section3/imgcamila.jpg"
+                srcset="./images/team/img-3.jpg 1x, ./images/team/img-3@2x.jpg 2x"
+                src="./images/team/img-3.jpg"
                 alt="camilagarcia"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-wrapper">
                 <h3 class="team-name">Camila Garcia</h3>
@@ -304,10 +322,12 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/section3/imgdaniel.jpg"
+                srcset="./images/team/img-4.jpg 1x, ./images/team/img-4@2x.jpg 2x"
+                src="./images/team/img-4.jpg"
                 alt="danielwilson"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-wrapper">
                 <h3 class="team-name">Daniel Wilson</h3>
@@ -405,7 +425,7 @@
       </section>
     </main>
     <!-- Footer sectoin -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-container container">
         <div class="footer-left">
           <a class="logo link" href="./index.html"> Web<span class="logo-light">Studio</span> </a>
@@ -469,9 +489,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="14" height="14">
@@ -524,8 +544,81 @@
           <button class="modal-form-btn" type="submit">Send</button>
         </form>
       </div>
+    </div> -->
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-icon" width="14" height="14">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="./index.html" class="link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="./portfolio.html" class="link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="" class="link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-socials socials list">
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href
+            aria-label="https://instagram.com"
+            rel="noopener noreferrer"
+            aria-label="Instagram link"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a class="socials-link" href aria-label="Twitter link">
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a class="socials-link" href aria-label="Facebook link">
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a class="socials-link" href aria-label="Linkedin link">
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
 
-    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="./js/modal.js"></script>
   </body>
 </html>
