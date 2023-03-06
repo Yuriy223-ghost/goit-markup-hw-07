@@ -58,12 +58,12 @@
     </header>
     <main>
       <!-- Hero image section -->
-      <!-- <section class="hero-section section">
+      <section class="hero-section section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn btn" type="button" data-modal-open>Order Service</button>
         </div>
-      </section> -->
+      </section>
       <!-- Sectoin1 -->
       <section class="benefits section">
         <div class="container">
@@ -425,7 +425,7 @@
       </section>
     </main>
     <!-- Footer sectoin -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-container container">
         <div class="footer-left">
           <a class="logo link" href="./index.html"> Web<span class="logo-light">Studio</span> </a>
@@ -489,9 +489,10 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="14" height="14">
@@ -531,7 +532,7 @@
             ></textarea>
           </label>
           <label class="modal-form-agreemet">
-            <input class="modal-form-checkbox" type="checkbox" name="user_agreemet" required/>
+            <input class="modal-form-checkbox" type="checkbox" name="user_agreemet" required />
             <svg class="modal-form-custom-checkbox" width="16" height="16">
               <use class="check" href="./images/icons.svg#icon-check"></use>
               <use class="uncheck" href="./images/icons.svg#icon-uncheck"></use>
@@ -544,8 +545,9 @@
           <button class="modal-form-btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
-    <!-- mobile menu -->
+    </div>
+
+    <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg class="modal-icon" width="14" height="14">
@@ -553,21 +555,23 @@
         </svg>
       </button>
 
-      <ul class="mobile-menu">
+      <ul class="mobile-menu list">
         <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="./index.html" class="link">Studio</a>
+          <a class="mobile-menu-link link current" href="./index.html">Studio</a>
         </li>
         <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="./portfolio.html" class="link">Portfolio</a>
+          <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
         </li>
         <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="" class="link">Contacts</a>
+          <a class="mobile-menu-link link" href="">Contacts</a>
         </li>
       </ul>
 
-      <ul class="mobile-contacts">
+      <ul class="mobile-contacts list">
         <li class="mobile-contacts-item">
-          <a class="mobile-contacts-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <a class="mobile-contacts-link link accent" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
         </li>
         <li class="mobile-contacts-item">
           <a class="mobile-contacts-link link" href="mailto:info@devstudio.com"
